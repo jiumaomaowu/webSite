@@ -1,0 +1,120 @@
+
+
+.page-home{
+    position: relative;
+    .bgimg{
+        width: 100%;
+       
+    }
+    .home-L{
+        // position:absolute;
+        // left: 0;
+        // top: 0;
+        width: 100%;
+    }
+
+    .cricle{
+    .outside{
+        display: flex;
+        img{
+       
+            width: 8rem;
+            height: 8rem;
+            border:1px solid #000;
+            margin: 0 auto;
+            // border-radius:100%;
+          }
+    }
+      
+    }
+    .Row{
+        min-height: -webkit-fill-available;
+        width: 100%;
+        height: 100%;
+        background-color: #323232;
+        display: flex;
+        align-items: center;
+    //   margin-top: -200px;
+
+    }
+}
+.cricle img{
+    transition:all 2s ease-in;
+}
+
+.show{
+    border-radius:100%;transform:rotate(360deg);
+    // opacity: 1;
+    // transition:show-item all 1s ease-in forwards;
+   
+}
+
+//  .show{
+//     opacity: 1;
+//     transition: all 1s ease-in ;
+// }
+// .hide{
+//     opacity: 0;
+//     transition: all 1s ease-in ;
+// }
+// -------------
+// .show-enter{
+//   opacity: 0;
+// }
+// .show{
+//     opacity: 1;
+//     transition:show-item all 1s ease-in forwards;
+     
+// }
+
+// .hide{
+//     animation: hide-item 1s ease-in forwards;/*调用动画，forwards作用：使动画停留在最后的100%*/
+ 
+// }
+// /*//定义一个动画*/
+@keyframes show-item {
+    // 0% {opacity: 0; right: 50px}
+    // 50% {opacity: 0.5; }
+    100% { margin-left:730px;border-radius:50px;transform:rotate(360deg);}
+    
+}
+// @keyframes hide-item {
+//     0% {opacity: 1;transform:rotate(0deg)}
+//     50% {opacity: 0.5;transform:rotate(90deg)}
+//     100% {opacity: 0;transform:rotate(180deg)}
+// }
+
+// /*入场动画*/
+// .fade-enter, .fade-appear{
+//     /*入场动画执行的第一个时刻*/
+//     opacity: 0;
+// }
+ 
+// .fade-enter-active, .fade-appear-active{
+//     /*入场动画执行的第二个瞬间一直到执行完成的时刻*/
+//     opacity: 1;
+//     transition: opacity 1s ease-in;
+// }
+ 
+// .fade-enter-done{
+//     /*入场动画执行完成之后*/
+//     opacity: 1;
+    
+// }
+ 
+
+ 
+ 
+// /*出场动画*/
+// .fade-exit{
+//     opacity: 1;
+// }
+ 
+// .fade-exit-active{
+//     opacity: 0;
+//     transition: opacity 1s ease-in;
+// }
+ 
+// .fade-exit-done{
+//     opacity: 0;
+// }

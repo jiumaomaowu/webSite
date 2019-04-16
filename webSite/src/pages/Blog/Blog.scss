@@ -1,0 +1,94 @@
+.blog-card{
+    margin-bottom: 20px;
+}
+
+.blog-card-page{
+    .ant-tag{
+        margin: 6px;
+    }
+}
+.ant-spin-container{
+    .ant-list-item{
+        background: #fff;
+        margin-bottom: 10px;
+        padding: 20px;
+        display: flex;
+        // flex-direction: column;
+        .ant-list-item-meta{
+            cursor: pointer;
+        }
+        .ant-list-item-meta-title{
+            font-size: .4rem;
+            font-weight: 600;
+            text-align: left;
+            line-height: .4rem;
+            margin-bottom: 10px;
+            // white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .ant-list-item-meta-description{
+            font-size: 14px;
+            line-height: 20px;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;//（希望显示N行-webkit-line-clamp的变为N）
+            -webkit-box-orient: vertical;
+        }
+        .ant-list-item-action{
+            text-align: left;
+            margin-left: 0;
+
+        }
+    }
+}
+.blog-article{
+    .ant-card-head-title,.ant-card-meta-title{
+        font-size: .3rem
+    }
+}
+.listul{
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    text-align: left;
+    .listul-item{
+        flex: 1 1;
+        margin-left: 30px;
+        .ul-title{
+           
+                font-size: .4rem;
+                font-weight: 600;
+                line-height: 1.2;
+                color: #2e3135;
+                overflow: hidden;/*超出部分隐藏*/
+                margin-bottom: 12px;
+                text-overflow:ellipsis;/*超出部分文字以...显示*/
+           
+            
+        }
+        .ul-description{
+            color: rgba(0,0,0,.45);
+            font-size: 14px;
+            line-height: 22px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+       
+    }
+    .item-time{
+        margin-left: 20px;
+        display: flex;
+        span{
+            text-align: right;
+            font-size: 14px;
+            color: rgba(0,0,0,.45);
+        }
+    }
+}

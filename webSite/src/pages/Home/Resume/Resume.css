@@ -1,0 +1,21 @@
+.Editor {
+  height: 0px;
+}
+
+.Editor .styleEditor {
+  padding: 5px;
+  overflow: auto;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+html {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.Editor-row {
+  background-color: #323232;
+}

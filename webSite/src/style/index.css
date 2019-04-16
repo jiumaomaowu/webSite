@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/*这里定义整个应用加载时的动画，进场前这里设置了缩放为0，
+进场过程中缩放变为1，也就是100%，持续时间为500ms，
+时间曲是ease-out，一种先快后慢的变化曲线*/
+.appAppear-appear {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.appAppear-appear.appAppear-appear-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: 500ms ease-out;
+}
+
+/*设置进场前透明度为0，防缩为0*/
+.fade-enter .page, .fade-enter {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-enter.fade-enter-active .page, .fade-enter.fade-enter-active {
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top left;
+  transition: 800ms ease-out;
+  display: none;
+}
+
+/*设置退场前透明度为1，防缩为1*/
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: 800ms ease-out;
+}
+
+.page {
+  padding: 24px;
+  margin: 0px;
+  /* min-height: 843px; */
+  height: 100%;
+  overflow: initial;
+}
+
+.page {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+.switch-bg {
+  width: 100%;
+  height: calc(100% - 60px);
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  background-color: #ffd03f;
+}
+
+.animate-enter {
+  width: 100%;
+  height: calc(100% - 60px);
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+}
+
+.animate-enter span {
+  display: block;
+  width: 100%;
+  height: calc(100% / 16);
+  background-color: #ffd03f;
+  transition: 0.6s ease-in;
+  transform: scale(1, 1.05);
+  transform-origin: right top;
+}
+
+.animate-enter span.active-enter {
+  transform: scale(0, 1.05);
+}
+
+.animate-leave {
+  width: 100%;
+  height: calc(100% - 60px);
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+}
+
+.animate-leave span {
+  display: block;
+  width: 100%;
+  height: calc(100% / 16);
+  background-color: #ffd03f;
+  transition: 0.6s ease-in;
+  transform: scale(0, 1.05);
+  transform-origin: left top;
+}
+
+.animate-leave span.active-leave {
+  transform: scale(1, 1.05);
+}
